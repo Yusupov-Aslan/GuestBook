@@ -1,13 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-Aslan
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}Главная страница{% endblock %}
+{% block content %}
+    <br>
+    <h1>Гостевая Книга</h1>
+    <br>
+    {% for guest in guests %}
+        <div class="card border-success mb-3" style="max-width: 500px;">
+          <div class="card-header">{{ guest.author_name }} ({{ guest.author_mail }})
+              <a href="#" style="float: right"><i class="bi bi-file-earmark-minus"></i></a>
+              <a href="#" style="float: right"><i class="bi bi-pencil-square"></i></a>
+          </div>
+          <div class="card-body text-success">
+              <p class="card-text">{{ guest.text_notes }}</p>
+          </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
