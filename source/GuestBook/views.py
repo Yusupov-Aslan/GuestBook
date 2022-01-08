@@ -46,3 +46,12 @@ def update_view(request, pk):
             return redirect("index")
         else:
             return render(request, 'guest_update.html', {"guests": guest, "form": form})
+
+
+def delete_view(request, pk):
+    guest = get_object_or_404(Guest, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'guest_delete.html', {"guests": guest})
+    else:
+        guest.delete()
+        return redirect('index')
