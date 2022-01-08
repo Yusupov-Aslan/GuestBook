@@ -4,6 +4,7 @@
     <br>
     <h1>Гостевая Книга</h1>
     <br>
+    <h2><a href="{% url 'addGuest' %}" style="text-decoration: none"><i class="bi bi-plus-circle">New Guest</i></a></h2>
     {% for guest in guests %}
         <div class="card border-success mb-3" style="max-width: 500px;">
           <div class="card-header">{{ guest.author_name }} ({{ guest.author_mail }})
