@@ -4,12 +4,12 @@
     <br>
     <h1>Гостевая Книга</h1>
     <br>
-    <h2><a href="{% url 'addGuest' %}" style="text-decoration: none"><i class="bi bi-plus-circle">New Guest</i></a></h2>
+    <h2><a href="{% url 'add' %}" style="text-decoration: none"><i class="bi bi-plus-circle">New Guest</i></a></h2>
     {% for guest in guests %}
         <div class="card border-success mb-3" style="max-width: 500px;">
           <div class="card-header">{{ guest.author_name }} ({{ guest.author_mail }})
               <a href="#" style="float: right"><i class="bi bi-file-earmark-minus"></i></a>
-              <a href="#" style="float: right"><i class="bi bi-pencil-square"></i></a>
+              <a href="{% url 'update' guest.pk %}" style="float: right"><i class="bi bi-pencil-square"></i></a>
           </div>
           <div class="card-body text-success">
               <p class="card-text">{{ guest.text_notes }}</p>
