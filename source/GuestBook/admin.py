@@ -8,7 +8,7 @@ class GuestAdmin(admin.ModelAdmin):
     list_display = ['id', 'status', 'author_name', 'created_at']
     list_filter = ['status']
     search_fields = ['status']
-    fields = ['status', 'author_name', 'created_at', 'editing_time']
+    fields = ['author_name', 'author_mail', 'text_notes']
     readonly_fields = ['created_at']
 
 
