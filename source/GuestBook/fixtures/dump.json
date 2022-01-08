@@ -1,0 +1,92 @@
+[
+{
+    "model": "GuestBook.guest",
+    "pk": 1,
+    "fields": {
+        "author_name": "Aslan",
+        "author_mail": "aslan@mail.ru",
+        "text_notes": "Инициализация",
+        "status": "active",
+        "created_at": "2022-01-08T07:13:21.630Z",
+        "editing_time": "2022-01-08T07:13:21.630Z"
+    }
+},
+{
+    "model": "GuestBook.guest",
+    "pk": 2,
+    "fields": {
+        "author_name": "Joi",
+        "author_mail": "Joi@mail.com",
+        "text_notes": "Lorem ipsum, Toyota ipsum, Honda Fit!",
+        "status": "active",
+        "created_at": "2022-01-08T07:21:08.943Z",
+        "editing_time": "2022-01-08T07:21:08.943Z"
+    }
+},
+{
+    "model": "GuestBook.guest",
+    "pk": 3,
+    "fields": {
+        "author_name": "Sara",
+        "author_mail": "sara@mail.list",
+        "text_notes": "Все мы гении. Но если вы будете судить рыбу по её способности взбираться на дерево, она проживёт всю жизнь, считая себя дурой.",
+        "status": "active",
+        "created_at": "2022-01-08T07:22:10.340Z",
+        "editing_time": "2022-01-08T07:22:10.340Z"
+    }
+},
+{
+    "model": "GuestBook.guest",
+    "pk": 4,
+    "fields": {
+        "author_name": "Darvin",
+        "author_mail": "darvin@gmail.com",
+        "text_notes": "Несчастным или счастливым человека делают только его мысли, а не внешние обстоятельства. Управляя своими мыслями, он управляет своим счастьем.",
+        "status": "active",
+        "created_at": "2022-01-08T07:23:13.052Z",
+        "editing_time": "2022-01-08T07:23:13.052Z"
+    }
+},
+{
+    "model": "GuestBook.guest",
+    "pk": 5,
+    "fields": {
+        "author_name": "BenLaden",
+        "author_mail": "bombfoever@mail.com",
+        "text_notes": "„Почему те разрушения, которые несут американцы, — это свобода и демократия, а сопротивление им — это терроризм и фанатичная нетерпимость?“",
+        "status": "blocked",
+        "created_at": "2022-01-08T07:25:23.299Z",
+        "editing_time": "2022-01-08T07:25:23.299Z"
+    }
+},
+{
+    "model": "GuestBook.guest",
+    "pk": 6,
+    "fields": {
+        "author_name": "BenLaden",
+        "author_mail": "bombforever@mail.com",
+        "text_notes": "„В сегодняшних войнах не осталось морали. Совершенно ясно, что человечество спустилось на самые низшие ступени упадка и угнетения.“",
+        "status": "blocked",
+        "created_at": "2022-01-08T07:26:47.845Z",
+        "editing_time": "2022-01-08T07:26:47.845Z"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$Kmd0jQEk7Xxlx1PhjZE4c9$c/cu/uUzxvQLFquwF/7f8wZrM2Tam3AhAsSt7RvfLjM=",
+        "last_login": "2022-01-08T07:04:30.442Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-01-08T07:01:55.879Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
